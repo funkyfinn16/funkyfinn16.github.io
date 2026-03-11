@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blue</title>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport settings for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+    /* Reset box-sizing for all elements to include padding+border in width calculations */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        color: #878787; /* text color */
+        margin: 0; /* remove default margin */
+        font-family: sans-serif; /* simple readable font */
+        text-align: center; /* center text by default */
+    }
+
+    nav {
+        background: #4DA6FF; /* sky blue background */
+        padding: 1rem; /* inner spacing */
+        text-align: left; /* align nav links to the left */
+
+    }
+
+    /* <a> links within the navigation */
+    nav a {
+        color: #FFFFFF; /* white text */
+        text-decoration: none; /* remove underline */
+        font-size: 1rem;
+        margin: 0 1.5rem; 
+        font-weight: bold; /* bold links */
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            text-align: center;  /* Center on mobile */
+             padding: 0.75rem;
+            }
+    
+         nav a {
+            display: block;      /* Stack vertically */
+            margin: 0.5rem 0;    /* Vertical spacing */
+            padding: 0.75rem;    /* Larger tap targets */
+            }
+    }
+
+    h1 {
+        font-size: clamp(2rem, 5vw, 4.5rem); /* fluid size between 2rem and 4.5rem based on viewport width */
+        color: white; /* white text for contrast */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* subtle shadow for readability on image */
+        margin: 0;
+    }
+
+    h2 {
+        font-size: clamp(1.2rem, 2.5vw, 1.75rem); 
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Make images responsive */
+    img {
+        width: 100%; /* image fills container width */
+        max-height: 20%;
+    }
+
+    /* Hero section (top banner with image) */
+    .hero {
+        min-height: 70vh; /* takes at least 70% of viewport height */
+        background: url("imgs/blues.png") no-repeat center; /* background image centered */
+        background-size: cover; /* image covers entire area */
+    }
+
+    /* Intro paragraph */
+    .intro {
+        max-width: 800px; /* limit width for readability */
+        margin: 3rem auto; /* vertical spacing + center horizontally */
+        padding: 0 1.5rem; /*top+bottom|left+right */
+        font-size: clamp(1rem, 1.2vw, 1.25rem); /* fluid font size */
+        text-align: justify; /* text aligned neatly */
+    }
+    /* Box */
+    .box {
+        display: flex ;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    /* Individual cards */
+    .card {  
+        width: 300px;
+        background: #f7f7f7; /* light gray background */
+        padding: 1.5rem; /* inner spacing */
+        margin: 0.5rem; /* space between cards */
+        border-radius: 10px; /* rounded corners */
+        text-align: left; /* left-align text inside card */
+        flex: 1 1 100px;
+    }  
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="more.html">Explore More</a>
+    </nav>
+
+    <!-- Hero section with heading/subheading -->
+    <div class="hero">
+        <h1>The Color Blue <br> As a Blue </h1>
+        <h2> A Journey Through the Blues </h2>
+    </div>
+
+    <!-- Intro paragraph -->
+    <p class="intro">
+        Blue is a primary color in RGB and RYB models, located between violet and cyan in the visible spectrum with wavelengths of 450–495 nanometers. It evokes feelings of calmness, trust, and stability, often associated with the sky and sea. Common shades include navy, azure, and cyan. 
+    </p>
+
+    <!-- Card container -->
+    <div class="box">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="imgs/blueshockey.jpeg" alt="Resort">
+            <h3>Hockey</h3>
+            <p>
+                The St. Louis Blues are a professional ice hockey team based in St. Louis. The Blues compete in the National Hockey League as a member of the Central Division in the Western Conference. The franchise was founded in 1967 as one of the six teams from the 1967 NHL expansion and is named after the W. C.
+            </p>
+            <ul>
+                <li><a href="#">Robert Thomas Center</a></li>
+                <li><a href="#">Jordan Binnington Goaltender</a></li>
+                <li><a href="#">Colton Parayko Defenseman</a></li>
+            </ul>
+        </div>
+        <!-- End of Card 1 -->
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="imgs/bluesmusic.png" alt="Mountain">
+            <h3>Blues</h3>
+            <p>
+                Blues is a music genre[3] and musical form that originated among African Americans in the Deep South of the United States around the 1860s. Subgenres:
+            </p>
+            <ol>
+                <li>Boogie-woogie</li>
+                <li>country blues</li>
+                <li>jump blues</li>
+                <li>Delta blues</li>
+            </ol>
+        </div>
+        <!-- End of Card 2 -->
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="imgs/bluelight.jpg" alt="Mountain">
+            <h3>Blue Light</h3>
+            <p>
+                Blue light is a high-energy visible (HEV) light component (380-500 nm) primarily emitted by the sun, as well as digital screens and LED lighting
+        </div>
+        <!-- End of Card 3 -->
+
+    </div>
+    <!-- End of card container -->
+</body>
+
+</html>
