@@ -1,173 +1,345 @@
+<!-- HTML and CSS Validated --> 
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Blue</title>
-
-    <!-- Character encoding -->
+  <head>
+    <title>Color Theory In Movies</title>
     <meta charset="UTF-8">
-
-    <!-- Viewport settings for mobile responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <style>
-    /* Reset box-sizing for all elements to include padding+border in width calculations */
-    * {
-        box-sizing: border-box;
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", "sans-serif"}
+    body {font-size:16px;}
+
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+
+    .w3-half img:hover{opacity:1}
+
+    .w3-hover-white:hover {
+        background-color: rgba(255, 255, 255, 0.3) !important;
+        color: black !important;
     }
 
-    body {
-        color: #878787; /* text color */
-        margin: 0; /* remove default margin */
-        font-family: sans-serif; /* simple readable font */
-        text-align: center; /* center text by default */
+    .w3-hover-red:hover {
+        background-color: rgba(255, 0, 0, 0.3) !important;
+        color: black !important;
     }
 
-    nav {
-        background: #4DA6FF; /* sky blue background */
-        padding: 1rem; /* inner spacing */
-        text-align: left; /* align nav links to the left */
-
+    .w3-hover-yellow:hover {
+        background-color: rgba(255, 255, 0, 0.3) !important;
+        color: black !important;
     }
 
-    /* <a> links within the navigation */
-    nav a {
-        color: #FFFFFF; /* white text */
-        text-decoration: none; /* remove underline */
-        font-size: 1rem;
-        margin: 0 1.5rem; 
-        font-weight: bold; /* bold links */
+    .w3-hover-blue:hover {
+        background-color: rgba(0, 0, 255, 0.3) !important;
+        color: white !important;
     }
 
-    @media (max-width: 600px) {
-        nav {
-            text-align: center;  /* Center on mobile */
-             padding: 0.75rem;
-            }
-    
-         nav a {
-            display: block;      /* Stack vertically */
-            margin: 0.5rem 0;    /* Vertical spacing */
-            padding: 0.75rem;    /* Larger tap targets */
-            }
+    .w3-hover-purple:hover {
+        background-color: rgba(128, 0, 128, 0.3) !important;
+        color: white !important;
     }
-
-    h1 {
-        font-size: clamp(2rem, 5vw, 4.5rem); /* fluid size between 2rem and 4.5rem based on viewport width */
-        color: white; /* white text for contrast */
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* subtle shadow for readability on image */
-        margin: 0;
-    }
-
-    h2 {
-        font-size: clamp(1.2rem, 2.5vw, 1.75rem); 
-        color: white;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-    }
-
-    /* Make images responsive */
-    img {
-        width: 100%; /* image fills container width */
-        max-height: 20%;
-    }
-
-    /* Hero section (top banner with image) */
-    .hero {
-        min-height: 70vh; /* takes at least 70% of viewport height */
-        background: url("imgs/blues.png") no-repeat center; /* background image centered */
-        background-size: cover; /* image covers entire area */
-    }
-
-    /* Intro paragraph */
-    .intro {
-        max-width: 800px; /* limit width for readability */
-        margin: 3rem auto; /* vertical spacing + center horizontally */
-        padding: 0 1.5rem; /*top+bottom|left+right */
-        font-size: clamp(1rem, 1.2vw, 1.25rem); /* fluid font size */
-        text-align: justify; /* text aligned neatly */
-    }
-    /* Box */
-    .box {
-        display: flex ;
-        flex-wrap: wrap;
-        max-width: 1100px;
-        margin: auto;
-    }
-
-    /* Individual cards */
-    .card {  
-        width: 300px;
-        background: #f7f7f7; /* light gray background */
-        padding: 1.5rem; /* inner spacing */
-        margin: 0.5rem; /* space between cards */
-        border-radius: 10px; /* rounded corners */
-        text-align: left; /* left-align text inside card */
-        flex: 1 1 100px;
-    }  
     </style>
-</head>
-
+  </head>
 <body>
-    <!-- Navigation bar -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="more.html">Explore More</a>
-    </nav>
 
-    <!-- Hero section with heading/subheading -->
-    <div class="hero">
-        <h1>The Color Blue <br> As a Blue </h1>
-        <h2> A Journey Through the Blues </h2>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3; width:300px; font-weight:bold;
+            background: #8a9eff;
+            background: linear-gradient(90deg, rgba(138, 158, 255, 1) 0%, rgba(138, 243, 255, 1) 33%, rgba(255, 241, 138, 1) 65%, rgba(250, 85, 85, 1) 100%);
+            background-color: rgba(0,0,0,.2);
+            background-blend-mode: darken;"
+     id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Color Theory<br>in Film</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="red.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red">Red and Orange</a> 
+    <a href="yellow.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Yellow</a> 
+    <a href="green.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Green and Blue</a> 
+    <a href="contrast.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">Color Contrast</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background: #8a9eff;
+            background: linear-gradient(90deg, rgba(138, 158, 255, 1) 0%, rgba(138, 243, 255, 1) 33%, rgba(255, 241, 138, 1) 65%, rgba(250, 85, 85, 1) 100%);
+            background-color: rgba(0,0,0,.2);
+            background-blend-mode: darken;">
+  <a href="javascript:void(0)" class="w3-button w3-white w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Color Theory in Movies</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>The Hidden Language</b></h1>
+    <h1 class="w3-xxxlarge"><b>in Movies</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+  </div>
+  
+<!-- Color Psychology Example -->
+  <div class="w3-row-padding" style="margin-top:75px">
+    <div class="w3-col m12">
+      <div class="w3-light-grey w3-card-4">
+        <!-- Text -->
+        <div class="w3-container">
+          <h2>Psychology in Color Theory</h2>
+          <p class="w3-opacity"> 
+            <a href="https://www.youtube.com/watch?v=lINVnA3rVIE" target="_blank" style="text-decoration:none;"> Youtube: StudioBinder - Color Psychology for Directors: Ep5</a> 
+          </p>
+          <p>
+              Film color palettes matters to the audience. It’s not only aesthetic, it also affects storytelling. This video takes you through director’s choices when it comes to colorization in their film works and how those colors get different emotional responses from the audience.
+          </p>
+        </div>
+            <!-- Video -->
+        <div class="w3-container w3-center">
+          <video controls style="width:60%">
+              <source src="intro/studiobinder.mp4" type="video/mp4">
+              Your browser does not support the video file type.
+          </video>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Intro paragraph -->
-    <p class="intro">
-        Blue is a primary color in RGB and RYB models, located between violet and cyan in the visible spectrum with wavelengths of 450–495 nanometers. It evokes feelings of calmness, trust, and stability, often associated with the sky and sea. Common shades include navy, azure, and cyan. 
+  <!-- Color Theory -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>What is Color Theory?</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>A set of priniciples that combine science and art to understand how colors interact, mix, and affect human emotions and perceptions.</p>
+    <p>The colors a filmmaker chooses aren't just aesthetic decisions. They're storytelling decisions. They tell us who a character is, what a world feels like, and where the emotion of a scene is headed. Color triggers emotional and psychological responses that are almost involuntary. In general, warm tones like reds, oranges, and ambers tend to feel energetic, intimate, or dangerous depending on context. Cool tones, like blues, greens, grays, can read as calm, melancholy, clinical, or otherworldly. Within each color are a multitude of hues you can break down even further to specifically hone in on the exact level of emotion you're seeking. 
     </p>
+  </div>
 
-    <!-- Card container -->
-    <div class="box">
-        <!-- Card 1 -->
-        <div class="card">
-            <img src="imgs/blueshockey.jpeg" alt="Resort">
-            <h3>Hockey</h3>
-            <p>
-                The St. Louis Blues are a professional ice hockey team based in St. Louis. The Blues compete in the National Hockey League as a member of the Central Division in the Western Conference. The franchise was founded in 1967 as one of the six teams from the 1967 NHL expansion and is named after the W. C.
-            </p>
-            <ul>
-                <li><a href="#">Robert Thomas Center</a></li>
-                <li><a href="#">Jordan Binnington Goaltender</a></li>
-                <li><a href="#">Colton Parayko Defenseman</a></li>
-            </ul>
-        </div>
-        <!-- End of Card 1 -->
-
-        <!-- Card 2 -->
-        <div class="card">
-            <img src="imgs/bluesmusic.png" alt="Mountain">
-            <h3>Blues</h3>
-            <p>
-                Blues is a music genre[3] and musical form that originated among African Americans in the Deep South of the United States around the 1860s. Subgenres:
-            </p>
-            <ol>
-                <li>Boogie-woogie</li>
-                <li>country blues</li>
-                <li>jump blues</li>
-                <li>Delta blues</li>
-            </ol>
-        </div>
-        <!-- End of Card 2 -->
-
-        <!-- Card 3 -->
-        <div class="card">
-            <img src="imgs/bluelight.jpg" alt="Mountain">
-            <h3>Blue Light</h3>
-            <p>
-                Blue light is a high-energy visible (HEV) light component (380-500 nm) primarily emitted by the sun, as well as digital screens and LED lighting
-        </div>
-        <!-- End of Card 3 -->
-
+  <!-- Color Theory Slideshow -->
+  <div class="w3-content w3-display-container" style="max-width:800px">
+    <!-- Slide 1 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="intro/monochromatic.webp" style="width:100%" alt="Monochromatic color palettes">
+      <div class="w3-container">
+        <h2>Monochromatic Color Pallettes</h2>
+        <p>Monochromatic color palettes are harmonious and even a dreamy color combination.</p>
+      </div>
     </div>
-    <!-- End of card container -->
-</body>
 
+    <!-- Slide 2 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="intro/analogous.webp" style="width:100%" alt="Analogous color palettes">
+      <div class="w3-container">
+        <h2>Analogous Color Palletes</h2>
+        <p>These palettes avoid high contrast, often evoking specific emotions like tranquility or overwhelming tension, and are frequently used to reflect environments in nature.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="intro/complementary.webp" style="width:100%" alt="Complementary color palettes">
+      <div class="w3-container">
+        <h2>Complementary Color Palletes</h2>
+        <p>By pairing warm and cool tones, filmmakers generate intense visual tension, highlight characters, and emphasize conflict, making the image pop.</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+  </div>
+  
+  <!-- Examples -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Important Examples</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>The best way to understand is to see how it's used in major movies and TV shows.</p>
+    <p>Films like La La Land, Schindler's List, and The Matrix demonstrate how color theory can shape meaning, from vibrant hues expressing emotion and ambition, to stark black-and-white realism punctuated by symbolic color, to contrasting tints that separate illusion from reality. Other films, such as Mad Max: Fury Road and Moonlight, similarly use bold palettes and shifting tones to reflect character identity, environment, and emotional transformation, showing how color can act as a powerful storytelling tool beyond dialogue.</p>
+  </div>
+
+    <div class="w3-row-padding">
+  
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-pale-yellow">
+      <img src="intro/lalaland.webp" alt="La La Land" style="width:100%;">
+      <div class="w3-container">
+        <h2 onclick="myFunction('movie1')" style="cursor:pointer" class="w3-hover-opacity">La La Land</h2>
+        <p class="w3-opacity">Damien Chazelle</p>
+        
+        <p id="movie1" class="w3-hide">In La La Land, color theory plays a key role in expressing emotion and character development, with director Damien Chazelle using bold, saturated hues, like Mia’s bright yellow dress symbolizing hope and ambition, and cooler blues and purples reflecting moments of isolation or longing to visually track the shifting relationship between the protagonists and the tension between dreams and reality.</p>
+        
+        <a href="https://www.imdb.com/title/tt3783958/" target="_blank" class="w3-btn w3-blue-gray w3-hover-blue w3-block w3-margin-top"> Watch Movie </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="intro/schindler.webp" alt="Schindler's List" style="width:100%">
+      <div class="w3-container">
+        <h2 onclick="myFunction('movie2')" style="cursor:pointer" class="w3-hover-opacity">Schindler's List</h2>
+        <p class="w3-opacity ">Steven Spielberg</p>
+        
+        <p id="movie2" class="w3-hide">In Schindler's List, director Steven Spielberg uses color theory in a strikingly minimal way by presenting most of the film in black and white to evoke historical realism and emotional gravity, while selectively introducing color. Most famously the girl in the red coat, to draw attention to innocence amid horror and to symbolize the human cost of the Holocaust, making the moment deeply impactful and unforgettable.</p>
+        
+        <a href="https://www.imdb.com/title/tt0108052/" target="_blank" class="w3-btn w3-blue-gray w3-hover-red w3-block w3-margin-top"> Watch Movie </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-pale-green">
+      <img src="intro/matrix.webp" alt="The Matrix" style="width:100%">
+      <div class="w3-container">
+        <h2 onclick="myFunction('movie3')" style="cursor:pointer" class="w3-hover-opacity">The Matrix</h2>
+        <p class="w3-opacity">The Wachowski sisters</p>
+        
+        <p id="movie3" class="w3-hide">In The Matrix, the Wachowski sisters use color theory to distinguish between realities: scenes inside the Matrix are tinted green, evoking computer code and artificiality, while the real world is cast in cold blue tones to emphasize its bleakness and authenticity; this contrast helps viewers subconsciously track where they are while reinforcing the film’s themes of illusion versus reality.</p>
+        
+        <a href="https://www.imdb.com/title/tt0133093/" target="_blank" class="w3-btn w3-blue-gray w3-hover-green w3-block w3-margin-top"> Watch Movie </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Why is Color Theory Important -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>The Value</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Color theory in film is a powerful visual language used to communicate emotion, tone, and narrative subtext. While it is essential for immersive storytelling, its effectiveness depends on the context of the story and can sometimes lead to clichés or visual fatigue.</p>
+
+    <!-- Color Grading Example -->
+    <div class="w3-row-padding" style="margin-top:75px">
+      <div class="w3-col m12">
+        <div class="w3-light-grey w3-card-4">
+          <!-- Text -->
+          <div class="w3-container">
+            <h2>Color Grading Example: Live Action Moana</h2>
+            <p class="w3-opacity"> 
+              <a href="https://www.reddit.com/r/Filmmakers/comments/1s6bpqc/imagine_moana_in_color_a_simple_color_grade/" target="_blank" style="text-decoration:none;"> u/SlashMatrix - Reddit Filmmaking Community </a> 
+            </p>
+            <p>
+              This clip demonstrates how color grading can dramatically shift mood and tone. By adjusting hues and saturation, the same scene can feel warmer, darker, or more emotionally intense, showing how powerful color is in visual storytelling.
+            </p>
+          </div>
+            <!-- Video -->
+          <video controls style="width:100%">
+            <source src="intro/moana.mp4" type="video/mp4">
+            Your browser does not support the video file type.
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- Pro/Con List -->
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-pale-green w3-xlarge w3-padding-32">Pros</li>
+          <li class="w3-padding-16">Enhances Emotional Impact</li>
+          <li class="w3-padding-16">Creates a Visual Theme</li>
+          <li class="w3-padding-16">Directs Audience Focus</li>
+          <li class="w3-padding-16">Establishes Film Setting</li>
+          <li class="w3-padding-16">Increases Film Professionalism</li>
+        </ul>
+      </div>
+          
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-pale-red w3-xlarge w3-padding-32">Cons</li>
+          <li class="w3-padding-16">Misinterpretation</li>
+          <li class="w3-padding-16">Predictability </li>
+          <li class="w3-padding-16">Production Costs and Inflexibility</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a href="index.html" class="w3-bar-item w3-button">&laquo;</a>
+      <a href="index.html" class="w3-button w3-crimson">1</a>
+      <a href="red.html" class="w3-button">2</a>
+      <a href="yellow.html" class="w3-button">3</a>
+      <a href="green.html" class="w3-button">4</a>
+      <a href="contrast.html" class="w3-button">5</a>
+      <a href="red.html" class="w3-button">&raquo;</a>
+    </div>
+  </div>
+
+</div>
+<!-- End page content -->
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Example Card Accordions
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+
+  //Image Slide Show 2
+  var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex2-1].style.display = "block";  
+}
+</script>
+
+</body>
 </html>
