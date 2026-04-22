@@ -1,0 +1,296 @@
+<!-- NOTE TO SELF: LOOK THROUGH ALL ALTS AND MAKE SURE THEY ARE ACCURATE 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+<!-- CSS and HTML Validated -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Color Theory In Movies: Yellow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img {
+  transition: transform 0.3s ease;
+}
+
+.w3-half img:hover {
+  transform: scale(1.05);
+}
+
+.w3-hover-white:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-red:hover {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-yellow:hover {
+    background-color: rgba(255, 255, 0, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-blue:hover {
+    background-color: rgba(0, 0, 255, 0.3) !important;
+    color: white !important;
+}
+
+.w3-hover-purple:hover {
+    background-color: rgba(128, 0, 128, 0.3) !important;
+    color: white !important;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3; width:300px; font-weight:bold;
+            background: #ffb917;
+            background: linear-gradient(90deg, rgba(255, 185, 23, 1) 32%, rgba(247, 255, 102, 1) 93%);"
+     id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Color Theory<br>in Movies</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="red.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red">Red and Orange</a> 
+    <a href="yellow.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Yellow</a> 
+    <a href="green.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Green and Blue</a> 
+    <a href="contrast.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">Color Contrast</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background: #ffb917;
+            background: linear-gradient(90deg, rgba(255, 185, 23, 1) 32%, rgba(247, 255, 102, 1) 93%);">
+  <a href="javascript:void(0)" class="w3-button w3-pale-yellow w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Color Theory in Movies</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Yellow</b></h1>
+    <h1 class="w3-xxxlarge"><b>in Movies</b></h1>
+    <hr style="width:50px;border:5px solid gold;" class="w3-round">
+  </div>
+  
+  <!-- Photo Slideshow (modal) -->
+  <div class="w3-content w3-display-container w3-card-4 " style="max-width:800px">
+    <img class="mySlides" src="yellow/yellowmovies.webp" style="width:100%" alt="Yellow Movie Color Palettes">
+    <img class="mySlides" src="yellow/yellowmoonrise.webp" style="width:100%" alt="Moonrise">
+    <img class="mySlides" src="yellow/yellowwestern.webp" style="width:100%" alt="Western">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <!-- Meanings -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Meaning</b></h1>
+    <hr style="width:50px;border:5px solid gold" class="w3-round">
+    <p>A set of priniciples that combine science and art to understand how colors interact, mix, and affect human emotions and perceptions.</p>
+    <p>The colors a filmmaker chooses aren't just aesthetic decisions. They're storytelling decisions. They tell us who a character is, what a world feels like, and where the emotion of a scene is headed. Color triggers emotional and psychological responses that are almost involuntary. In general, warm tones like reds, oranges, and ambers tend to feel energetic, intimate, or dangerous depending on context. Cool tones, like blues, greens, grays, can read as calm, melancholy, clinical, or otherworldly. Within each color are a multitude of hues you can break down even further to specifically hone in on the exact level of emotion you're seeking. 
+    </p>
+  </div>
+    <!-- Meanings Cards -->
+    <div class="w3-row-padding">
+      <img src="yellow/yellowmeaning.webp" alt="Yellow Meaning" style="width: 100%;" onclick="expandImage(this)">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class=" w3-xlarge w3-padding-32" style="background-color: goldenrod;">Yellow</li>
+          <li class="w3-padding-16 w3-hover-yellow">Happiness</li>
+          <li class="w3-padding-16 w3-hover-yellow">Caution</li>
+          <li class="w3-padding-16 w3-hover-yellow">Energy</li>
+          <li class="w3-padding-16 w3-hover-yellow">Danger</li>
+          <li class="w3-padding-16 w3-hover-yellow">Naivety</li>
+          <li class="w3-padding-16 w3-hover-yellow">Sickness</li>
+        </ul>
+    </div>
+
+    <!-- Meaning Examples -->
+    <div class="w3-row-padding">
+      <!-- Card 1 -->
+      <div class="w3-col s1 m6 w3-margin-bottom">
+        <div style="background-color: palegoldenrod;">
+          <video controls style="width:100%">
+            <source src="yellow/joy.mp4" type="video/mp4">
+            Your browser does not support the video file type.
+          </video>
+          <div class="w3-container">
+            <h2>Happiness and Energy</h2>
+            <p class="w3-opacity">Inside Out (2015)</p>
+            <p> Yellow is the primary color for Joy, representing cheer, optimism, energy, and warmth. She often signifies "sunshine" and her role as a guiding light, while yellow memories are cherished, happy moments</p>
+            <a href="https://www.imdb.com/title/tt2096673/" target="_blank" class="w3-btn w3-blue-gray w3-hover-yellow w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="w3-col s1 m6 w3-margin-bottom">
+        <div style="background-color: palegoldenrod;">
+          <a href="https://www.youtube.com/watch?v=5r09JV_UnL8" target="_blank">
+            <img src="yellow/texas.webp" alt="Texas Chainsaw Massacre YouTube Video" style="width:100%; cursor:pointer;">
+          </a>
+          <div class="w3-container">
+            <h2>Danger and Caution</h2>
+            <p class="w3-opacity">The Texas Chain Saw Massacre (1974)</p>
+            <p>Yellow is used to evoke decay, sickness, and impending dread, most notably through Leatherface's iconic yellow butcher’s apron and his dull yellow chainsaw. In this 2026 video essay, Spooking After Midnight uses colour theory to explain why yellow is a substitute for on-screen violence in Tobe Hooper’s 1974 classic, The Texas Chain Saw Massacre.</p>
+            <a href="https://www.imdb.com/title/tt0072271/" target="_blank" class="w3-btn w3-blue-gray w3-hover-yellow w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="imgModal" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-yellow w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center">
+        <img id="modalImg" alt="N/A" src="#" style="width:100%">
+      </div>
+    </div>
+  <!-- Examples -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Important Examples</b></h1>
+    <hr style="width:50px;border:5px solid goldenrod;" class="w3-round">
+    <p>The best way to understand is to see how it's used in major movies and TV shows.</p>
+    <p>Films like La La Land, Schindler's List, and The Matrix demonstrate how color theory can shape meaning, from vibrant hues expressing emotion and ambition, to stark black-and-white realism punctuated by symbolic color, to contrasting tints that separate illusion from reality. Other films, such as Mad Max: Fury Road and Moonlight, similarly use bold palettes and shifting tones to reflect character identity, environment, and emotional transformation, showing how color can act as a powerful storytelling tool beyond dialogue.</p>
+  </div>
+
+  <!-- Example Slideshow -->
+  <div class="w3-content w3-display-container" style="max-width:800px">
+    <!-- Slide 1 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="yellow/anora.webp" style="width:100%" alt="Anora">
+      <div class="w3-container">
+        <h2>Anora</h2>
+        <p> In Sean Baker's Anora (2024), the variation in yellow—ranging from bright to sickly—reflects the changing fortunes, anxieties, and the "whirlwind" nature of Ani’s journey from a sex worker to a supposed fairy-tale life.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="yellow/Darjeeling.webp" style="width:100%" alt="The Darjeeling Limited">
+      <div class="w3-container">
+        <h2>The Darjeeling Limited</h2>
+        <p>In The Darjeeling Limited, Wes Anderson uses a vibrant,, and meticulously controlled yellow color palette to symbolize a blend of joy, longing, and emotional, "off-kilter" intensity during the brothers' spiritual journey </p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="yellow/licorice.webp" style="width:100%" alt="Licorice Pizza">
+      <div class="w3-container">
+        <h2>Licorice Pizza</h2>
+        <p>In Licorice Pizza (2021), Paul Thomas Anderson uses yellow to evoke 1970s California. It’s nostalgic and dreamlike. It represents youthful freedom and possibility. It also reflects the characters’ aspirations. Yellow helps to create the film’s unique atmosphere and sense of place..</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="yellow/Everything.webp" style="width:100%" alt="Everything Everywhere All at Once">
+      <div class="w3-container">
+        <h2>Everything Everywhere All at Once</h2>
+        <p> In Everything Everywhere All at Once (2022), yellows are not vibrant or joyful. They represent routine, responsibility, and the weight of everyday life. However, The Daniels juxtapose these mundane yellows with bursts of vibrant, almost hyperreal color in the multiverse sequences.</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+  </div>
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a href="red.html" class="w3-bar-item w3-button">&laquo;</a>
+      <a href="index.html" class="w3-button">1</a>
+      <a href="red.html" class="w3-button">2</a>
+      <a href="yellow.html" class="w3-button w3-yellow">3</a>
+      <a href="green.html" class="w3-button">4</a>
+      <a href="contrast.html" class="w3-button">5</a>
+      <a href="green.html" class="w3-button">&raquo;</a>
+    </div>
+  </div>
+</div>
+<!-- End page content -->
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex2-1].style.display = "block";  
+}
+
+function expandImage(img) {
+  document.getElementById("modalImg").src = img.src;
+  document.getElementById("imgModal").style.display = "block";
+}
+</script>
+
+</body>
+</html>

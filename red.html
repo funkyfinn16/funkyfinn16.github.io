@@ -1,0 +1,323 @@
+<!-- NOTE TO SELF: LOOK THROUGH ALL ALTS AND MAKE SURE THEY ARE ACCURATE 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+<!-- HTML and CSS Validated -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Color Theory In Movies: Red and Orange</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img {
+  transition: transform 0.3s ease;
+}
+
+.w3-half img:hover {
+  transform: scale(1.05);
+}
+
+.w3-hover-white:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-red:hover {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-yellow:hover {
+    background-color: rgba(255, 255, 0, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-blue:hover {
+    background-color: rgba(0, 0, 255, 0.3) !important;
+    color: white !important;
+}
+
+.w3-hover-purple:hover {
+    background-color: rgba(128, 0, 128, 0.3) !important;
+    color: white !important;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3; width:300px; font-weight:bold;
+            background: #ffa947;
+            background: linear-gradient(90deg, rgba(255, 169, 71, 1) 35%, rgba(250, 85, 85, 1) 64%);
+            background-color: rgba(0,0,0,0.2);
+            background-blend-mode: darken;"
+     id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Color Theory<br>in Movies</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="red.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red">Red and Orange</a> 
+    <a href="yellow.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Yellow</a> 
+    <a href="green.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Green and Blue</a> 
+    <a href="contrast.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">Color Contrast</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background: #ffa947;
+            background: linear-gradient(90deg, rgba(255, 169, 71, 1) 35%, rgba(250, 85, 85, 1) 64%);
+            background-color: rgba(0,0,0,0.2);
+            background-blend-mode: darken;">
+  <a href="javascript:void(0)" class="w3-button w3-crimson w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Color Theory in Movies</span>
+</header>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Red and Orange</b></h1>
+    <h1 class="w3-xxxlarge"><b>in Movies</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo Slideshow (modal) -->
+  <div class="w3-content w3-display-container w3-card-4 " style="max-width:800px">
+    <img class="mySlides" src="red/redpalette.webp" style="width:100%" alt="Red Movie Palettes">
+    <img class="mySlides" src="red/orangepalette.webp" style="width:100%" alt="Orange Movie Palettes">
+    <img class="mySlides" src="red/sunshine.webp" style="width:100%" alt="Sunshine">
+    <img class="mySlides" src="red/pulp.webp" style="width:100%" alt="Fantastic Mr. Fox">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <!-- Meanings -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Meaning</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <p>A set of priniciples that combine science and art to understand how colors interact, mix, and affect human emotions and perceptions.</p>
+    <p>The colors a filmmaker chooses aren't just aesthetic decisions. They're storytelling decisions. They tell us who a character is, what a world feels like, and where the emotion of a scene is headed. Color triggers emotional and psychological responses that are almost involuntary. In general, warm tones like reds, oranges, and ambers tend to feel energetic, intimate, or dangerous depending on context. Cool tones, like blues, greens, grays, can read as calm, melancholy, clinical, or otherworldly. Within each color are a multitude of hues you can break down even further to specifically hone in on the exact level of emotion you're seeking. 
+    </p>
+  </div>
+   <!-- Meanings Cards -->
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <img src="red/redmeaning.webp" alt="Red Meaning" style="width: 100%;" onclick="expandImage(this)">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class=" w3-xlarge w3-padding-32" style="background-color: brown;">Red</li>
+          <li class="w3-padding-16 w3-hover-red">Love</li>
+          <li class="w3-padding-16 w3-hover-red">Passion</li>
+          <li class="w3-padding-16 w3-hover-red">Violence</li>
+          <li class="w3-padding-16 w3-hover-red">Danger</li>
+          <li class="w3-padding-16 w3-hover-red">Anger</li>
+          <li class="w3-padding-16 w3-hover-red">Passion</li>
+        </ul>
+      </div>
+      
+      <div class="w3-half w3-margin-bottom">
+        <img src="red/orangemeaning.webp" alt="Orange Meaning" style="width: 100%;" onclick="expandImage(this)">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class=" w3-xlarge w3-padding-32" style="background-color: peru;">Orange</li>
+          <li class="w3-padding-16 w3-hover-orange">Warmth</li>
+          <li class="w3-padding-16 w3-hover-orange">Sociability</li>
+          <li class="w3-padding-16 w3-hover-orange">Friendship</li>
+          <li class="w3-padding-16 w3-hover-orange">Happiness</li>
+          <li class="w3-padding-16 w3-hover-orange">Exotic</li>
+          <li class="w3-padding-16 w3-hover-orange">Youth</li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- Color Theory Slideshow -->
+  <div class="w3-content w3-display-container" style="max-width:800px">
+    <!-- Slide 1 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="red/godfather.webp" style="width:100%" alt="The Godfather">
+      <div class="w3-container">
+        <h2>The Godfather</h2>
+        <p> In The Godfather (1972) and Part II (1974), orange evokes tradition and familial warmth, yet often serves as a deceptive facade, masking the underlying corruption, darkness, and simmering violence inherent in the Corleone world.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="red/dune.webp" style="width:100%" alt="Dune">
+      <div class="w3-container">
+        <h2>Dune</h2>
+        <p>In Dune (2021), the vast desert landscapes of Arrakis are rendered in harsh, oppressive yellows and oranges. It emphasizes the planet’s deadly heat, unforgiving nature, and the preciousness of its resource, the spice. </p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="red/shining.webp" style="width:100%" alt="The Shining">
+      <div class="w3-container">
+        <h2>The Shining</h2>
+        <p>Stanley Kubrick, a master of visual symbolism, frequently employed red to create a sense of unease and impending doom. In The Shining (1980), the crimson flood of blood that bursts from the elevator doors is a shocking and visceral image that instantly establishes the Overlook Hotel’s horrific past.</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="red/amelie.webp" style="width:100%" alt="Amélie">
+      <div class="w3-container">
+        <h2>Amélie</h2>
+        <p>Amélie Poulain, is often associated with the color red. Her apartment is filled with red accents, wallpaper, red lamps, and knick-knacks. This use of red reflects her vibrant inner world. It shows her quirky personality and depicts her capacity for finding joy in the mundane.</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+  </div>
+  
+  <!-- Examples -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Important Examples</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best way to understand is to see how it's used in major movies and TV shows.</p>
+    <p>Films like La La Land, Schindler's List, and The Matrix demonstrate how color theory can shape meaning, from vibrant hues expressing emotion and ambition, to stark black-and-white realism punctuated by symbolic color, to contrasting tints that separate illusion from reality. Other films, such as Mad Max: Fury Road and Moonlight, similarly use bold palettes and shifting tones to reflect character identity, environment, and emotional transformation, showing how color can act as a powerful storytelling tool beyond dialogue.</p>
+  </div>
+
+    <!-- Examples Cards -->
+    <div class="w3-row-padding">
+      <!-- Card 1 -->
+      <div class="w3-col m4 w3-margin-bottom">
+        <div style="background-color: salmon;">
+          <img src="red/kevin.webp" alt="We Need to Talk About Kevin" style="width:100%;">
+          <div class="w3-container">
+            <h2>We Need to Talk About Kevin</h2>
+            <p class="w3-opacity">Lynne Ramsay</p>
+            <p> We Need to Talk About Kevin uses the color red as a pervasive, visceral symbol of guilt, violence, and foreboding.</p>
+            <a href="https://www.imdb.com/title/tt1242460/" target="_blank" class="w3-btn w3-blue-gray w3-hover-red w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="w3-col m4 w3-margin-bottom">
+        <div style="background-color: lightsalmon;">
+          <img src="red/blade.webp" alt="Blade Runner 2049" style="width:100%">
+          <div class="w3-container">
+            <h2>Blade Runner 2049</h2>
+            <p class="w3-opacity">Denis Villeneuve</p>
+            <p>In Blade Runner 2049, the pervasive red and orange tones symbolize radioactive decay, caution, and transformation, particularly within the irradiated Las Vegas landscape.</p>
+            <a href="https://www.imdb.com/title/tt1856101/" target="_blank" class="w3-btn w3-blue-gray w3-hover-orange w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="w3-col m4 w3-margin-bottom">
+        <div style="background-color: peru;">
+          <img src="red/macbeth.webp" alt="Macbeth" style="width:100%">
+          <div class="w3-container">
+            <h2>Macbeth</h2>
+            <p class="w3-opacity">Justin Kurzel</p>
+            <p>Kurzel uses a high-contrast orange to symbolize fire, blood, and the characters' descent into hellish psychological torment. This intense, often hazy, or smoke-filled orange glow contrasts with the bleak blues of the early scenes.</p>
+            <a href="https://www.imdb.com/title/tt2884018/" target="_blank" class="w3-btn w3-blue-gray w3-hover-brown w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="imgModal" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center">
+        <img id="modalImg" src="#" style="width:100%" alt="N/A">
+      </div>
+    </div>
+    <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a href="index.html" class="w3-bar-item w3-button">&laquo;</a>
+      <a href="index.html" class="w3-button">1</a>
+      <a href="red.html" class="w3-button w3-orange">2</a>
+      <a href="yellow.html" class="w3-button">3</a>
+      <a href="green.html" class="w3-button">4</a>
+      <a href="contrast.html" class="w3-button">5</a>
+      <a href="yellow.html" class="w3-button">&raquo;</a>
+    </div>
+  </div>
+
+</div>
+<!-- End page content -->
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex2-1].style.display = "block";  
+}
+
+function expandImage(img) {
+  document.getElementById("modalImg").src = img.src;
+  document.getElementById("imgModal").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!-- NOTE TO SELF: LOOK THROUGH ALL ALTS AND MAKE SURE THEY ARE ACCURATE 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Color Theory In Movies: Yellow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img {
+  transition: transform 0.3s ease;
+}
+
+.w3-half img:hover {
+  transform: scale(1.05);
+}
+
+.w3-hover-white:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-red:hover {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-yellow:hover {
+    background-color: rgba(255, 255, 0, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-blue:hover {
+    background-color: rgba(0, 0, 255, 0.3) !important;
+    color: white !important;
+}
+
+.w3-hover-purple:hover {
+    background-color: rgba(128, 0, 128, 0.3) !important;
+    color: white !important;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3; width:300px; font-weight:bold;
+            background: #82ff93;
+            background: linear-gradient(268deg, rgba(130, 255, 147, 1) 20%, rgba(130, 182, 255, 1) 83%);
+            background-color: rgba(0,0,0,0.2);
+            background-blend-mode: darken;"
+     id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Color Theory<br>in Movies</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="red.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red">Red and Orange</a> 
+    <a href="yellow.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Yellow</a> 
+    <a href="green.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Green and Blue</a> 
+    <a href="contrast.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">Color Contrast</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background: #82ff93;
+            background: linear-gradient(268deg, rgba(130, 255, 147, 1) 20%, rgba(130, 182, 255, 1) 83%);
+            background-color: rgba(0,0,0,0.2);
+            background-blend-mode: darken;">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Color Theory in Movies</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Green and Blue</b></h1>
+    <h1 class="w3-xxxlarge"><b>in Movies</b></h1>
+    <hr style="width:50px;border:5px solid teal;" class="w3-round">
+  </div>
+  
+  <!-- Photo Slideshow (modal) -->
+  <div class="w3-content w3-display-container w3-card-4 " style="max-width:800px">
+    <img class="mySlides" src="green/bluepalettes.webp" style="width:100%" alt="Blue Movie Color Palettes">
+    <img class="mySlides" src="green/greenpalettes.webp" style="width:100%" alt="Green Movie Color Palettes">
+    <img class="mySlides" src="green/shire.webp" style="width:100%" alt="Lord of the Rings Shire">
+    <img class="mySlides" src="green/twilight.webp" style="width:100%" alt="Twilight">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <!-- Meanings -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Meaning</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>A set of priniciples that combine science and art to understand how colors interact, mix, and affect human emotions and perceptions.</p>
+    <p>The colors a filmmaker chooses aren't just aesthetic decisions. They're storytelling decisions. They tell us who a character is, what a world feels like, and where the emotion of a scene is headed. Color triggers emotional and psychological responses that are almost involuntary. In general, warm tones like reds, oranges, and ambers tend to feel energetic, intimate, or dangerous depending on context. Cool tones, like blues, greens, grays, can read as calm, melancholy, clinical, or otherworldly. Within each color are a multitude of hues you can break down even further to specifically hone in on the exact level of emotion you're seeking. 
+    </p>
+  </div>
+   <!-- Meanings Lists -->
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <img src="green/greenmeaning.webp" alt="Green Meaning" style="width: 100%;" onclick="expandImage(this)">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class=" w3-xlarge w3-padding-32" style="background-color: #D0F0C0;">Green</li>
+          <li class="w3-padding-16 w3-hover-blue">Happiness</li>
+          <li class="w3-padding-16 w3-hover-blue">Caution </li>
+          <li class="w3-padding-16 w3-hover-blue">Energy</li>
+          <li class="w3-padding-16 w3-hover-blue">Danger</li>
+          <li class="w3-padding-16 w3-hover-blue">Naivety</li>
+          <li class="w3-padding-16 w3-hover-blue">Sickness</li>
+        </ul>
+      </div>
+      <div class="w3-half">
+        <img src="green/bluemeaning.webp" alt="Blue Meaning" style="width: 100%;" onclick="expandImage(this)">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class=" w3-xlarge w3-padding-32" style="background-color: lightblue;">Blue</li>
+          <li class="w3-padding-16 w3-hover-blue">Warmth</li>
+          <li class="w3-padding-16 w3-hover-blue">Sociability </li>
+          <li class="w3-padding-16 w3-hover-blue">Friendly</li>
+          <li class="w3-padding-16 w3-hover-blue">Happiness</li>
+          <li class="w3-padding-16 w3-hover-blue">Exotic</li>
+          <li class="w3-padding-16 w3-hover-blue">Youth</li>
+        </ul>
+      </div>
+    </div>
+     
+  <!-- Meaning Example Cards -->
+    <div class="w3-row-padding">
+      <!-- Card 1 -->
+      <div class="w3-col s1 m6 w3-margin-bottom">
+        <div style="background-color: #D0F0C0;">
+          <video controls style="width:100%">
+            <source src="green/wicked.mp4" type="video/mp4">
+            Your browser does not support the video file type.
+          </video>
+          <div class="w3-container">
+            <h2>Color in Wicked</h2>
+            <p class="w3-opacity">Designer Susan Hilferty</p>
+            <p> Wicked symbolizes her status as an outcast, representing the "other" and the prejudices she faces. It signifies her unique nature and power, challenging societal norms and serving as a metaphor for racism, marginalization, and the dangers of propaganda.</p>
+            <a href="https://www.imdb.com/title/tt1262426/" target="_blank" class="w3-btn w3-blue-gray w3-hover-blue w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="w3-col s1 m6 w3-margin-bottom">
+        <div style="background-color: lightblue;">
+          <video controls style="width:100%">
+            <source src="green/avatar.mp4" type="video/mp4">
+            Your browser does not support the video file type.
+          </video>
+          <div class="w3-container">
+            <h2>The Usage of Blue in Avatar</h2>
+            <p class="w3-opacity">Avatar (2009)</p>
+            <p>The blue coloration of the Na'vi in Avatar is primarily a deliberate creative choice by James Cameron to distinguish them from traditional green sci-fi aliens. Influenced by Hindu deities, the color signifies a spiritual, exotic nature while avoiding earthly racial parallels.</p>
+            <a href="https://www.imdb.com/title/tt0499549/" target="_blank" class="w3-btn w3-blue-gray w3-hover-green w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="imgModal" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-yellow w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center">
+        <img id="modalImg" alt="N/A" src="#" style="width:100%">
+      </div>
+    </div>
+  <!-- Examples -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Important Examples</b></h1>
+    <hr style="width:50px;border:5px solid teal;" class="w3-round">
+    <p>The best way to understand is to see how it's used in major movies and TV shows.</p>
+    <p>Blue and green color theory is vital in filmmaking for establishing mood, psychology, and thematic depth. Blue generally represents calmness, sadness, or coldness, while green often signifies nature, envy, or decay. These cool tones are used to create emotional resonance, contrast with warm skin tones, and establish environmental atmospheres, such as intimacy or isolation.</p>
+  </div>
+
+<!-- Example Slideshow -->
+  <div class="w3-content w3-display-container" style="max-width:800px">
+    <!-- Slide 1 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="green/bluepierrot.webp" style="width:100%" alt="Pierrot le Fou">
+      <div class="w3-container">
+        <h2>Pierrot le Fou</h2>
+        <p> In Pierrot le Fou (1965), blue becomes a dominant, almost overwhelming presence, often flooding entire scenes. This isn’t a naturalistic blue; it’s a stylized, heightened blue that reflects the film’s themes of alienation, existential angst, and the search for meaning in a chaotic world. </p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="green/bluemoonlight.webp" style="width:100%" alt="Moonlight">
+      <div class="w3-container">
+        <h2>Moonlight</h2>
+        <p>In Moonlight (2016), blue becomes almost synonymous with Chiron (Ashton Sanders), the film’s protagonist, across three distinct stages of his life. The film’s title itself alludes to the color’s significance. The blue-tinged moonlight that bathes key scenes represents moments of vulnerability, intimacy, and self-discovery.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="green/greenrobin.webp" style="width:100%" alt="The Adventures of Robin Hood">
+      <div class="w3-container">
+        <h2>The Adventures of Robin Hood</h2>
+        <p>Early Technicolor films often used green in a relatively straightforward way, emphasizing its association with nature and the outdoors. The Adventures of Robin Hood (1938), for example, features lush green forests that serve as both a setting and a symbol of Robin Hood’s connection to the natural world and his fight for freedom.</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="green/greenvertigo.webp" style="width:100%" alt="Vertigo">
+      <div class="w3-container">
+        <h2>Vertigo</h2>
+        <p> In Vertigo, green becomes almost an obsession, a visual manifestation of mystery, illusion, and the haunting presence of Madeleine. This isn’t the green of nature. It’s an artificial, unsettling green, suggesting a world that’s not quite real, a world shaped by obsession and deception. The green becomes a visual cue, a warning sign, and a symbol of the dangerous allure of the past.</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+  </div>
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a href="yellow.html" class="w3-bar-item w3-button">&laquo;</a>
+      <a href="index.html" class="w3-button">1</a>
+      <a href="red.html" class="w3-button">2</a>
+      <a href="yellow.html" class="w3-button">3</a>
+      <a href="green.html" class="w3-button w3-blue">4</a>
+      <a href="contrast.html" class="w3-button">5</a>
+      <a href="contrast.html" class="w3-button">&raquo;</a>
+    </div>
+  </div>
+
+</div>
+<!-- End page content -->
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex2-1].style.display = "block";  
+}
+
+function expandImage(img) {
+  document.getElementById("modalImg").src = img.src;
+  document.getElementById("imgModal").style.display = "block";
+}
+</script>
+
+</body>
+</html>

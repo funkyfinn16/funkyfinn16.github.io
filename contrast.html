@@ -1,0 +1,317 @@
+<!-- NOTE TO SELF: LOOK THROUGH ALL ALTS AND MAKE SURE THEY ARE ACCURATE 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+<!-- CSS and HTML Validated -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Color Theory In Movies: Contrasting Colors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.w3-half img {
+  transition: transform 0.3s ease;
+}
+
+.w3-half img:hover {
+  transform: scale(1.05);
+}
+
+.w3-hover-white:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-red:hover {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-yellow:hover {
+    background-color: rgba(255, 255, 0, 0.3) !important;
+    color: black !important;
+}
+
+.w3-hover-blue:hover {
+    background-color: rgba(0, 0, 255, 0.3) !important;
+    color: white !important;
+}
+
+.w3-hover-purple:hover {
+    background-color: rgba(128, 0, 128, 0.3) !important;
+    color: white !important;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3; width:300px; font-weight:bold;
+            background: #9593ab;
+            background: linear-gradient(88deg, rgba(149, 147, 171, 1) 20%, rgba(255, 173, 188, 1) 75%);
+            background-blend-mode: darken;"
+     id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Color Theory<br>in Movies</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="red.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red">Red and Orange</a> 
+    <a href="yellow.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Yellow</a> 
+    <a href="green.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-blue">Green and Blue</a> 
+    <a href="contrast.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-purple">Color Contrast</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" 
+  style="background: #9593ab; 
+  background: linear-gradient(88deg, rgba(149, 147, 171, 1) 20%, rgba(255, 173, 188, 1) 75%); 
+  background-blend-mode: darken;">
+  <a href="javascript:void(0)" class="w3-button w3-gray w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Color Theory in Movies</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Color Contrast</b></h1>
+    <h1 class="w3-xxxlarge"><b>in Movies</b></h1>
+    <hr style="width:50px;border:5px solid lightgray;" class="w3-round">
+  </div>
+  
+  <!-- Photo Slideshow (modal) -->
+  <div class="w3-content w3-display-container w3-card-4 " style="max-width:800px">
+    <img class="mySlides" src="purple/slideshow1.webp" style="width:100%" alt="Her (2013)">
+    <img class="mySlides" src="purple/slideshow2.webp" style="width:100%" alt="Joker (2019)">
+    <img class="mySlides" src="purple/slideshow3.webp" style="width:100%" alt="Corpse Bride (2005)">
+    <img class="mySlides" src="purple/slideshow4.webp" style="width:100%" alt="Edward Scissorhands (1990)">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <!-- Meanings -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Meaning</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>A set of priniciples that combine science and art to understand how colors interact, mix, and affect human emotions and perceptions.</p>
+    <p>The colors a filmmaker chooses aren't just aesthetic decisions. They're storytelling decisions. They tell us who a character is, what a world feels like, and where the emotion of a scene is headed. Color triggers emotional and psychological responses that are almost involuntary. In general, warm tones like reds, oranges, and ambers tend to feel energetic, intimate, or dangerous depending on context. Cool tones, like blues, greens, grays, can read as calm, melancholy, clinical, or otherworldly. Within each color are a multitude of hues you can break down even further to specifically hone in on the exact level of emotion you're seeking. 
+    </p>
+  </div>
+   <!-- Meanings Lists -->
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <img src="purple/wizard.webp" alt="The Wizard of Oz" style="width: 100%;" onclick="expandImage(this)">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class=" w3-xlarge w3-padding-32" style="background-color: #F2E6F5;">Low Contrast</li>
+          <li class="w3-padding-16 w3-hover-white">Soft</li>
+          <li class="w3-padding-16 w3-hover-white">Flat</li>
+          <li class="w3-padding-16 w3-hover-white">Muted</li>
+          <li class="w3-padding-16 w3-hover-white">Nostalgic</li>
+          <li class="w3-padding-16 w3-hover-white">Somber</li>
+          <li class="w3-padding-16 w3-hover-white">Hazy</li>
+        </ul>
+      </div>
+    
+      <div class="w3-half">
+        <img src="purple/nuremberg.webp" alt="Nuremberg" style="width: 100%;" onclick="expandImage(this)">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class=" w3-xlarge w3-padding-32" style="background-color: #1a1a1a; color: white;">High Contrast</li>
+          <li class="w3-padding-16 w3-hover-black">Tension</li>
+          <li class="w3-padding-16 w3-hover-black">Suspense </li>
+          <li class="w3-padding-16 w3-hover-black">Emotion</li>
+          <li class="w3-padding-16 w3-hover-black">Clarity</li>
+          <li class="w3-padding-16 w3-hover-black">Focus</li>
+          <li class="w3-padding-16 w3-hover-black">Intensity</li>
+        </ul>
+      </div>
+    </div>
+     
+  <!-- Meaning Example Cards -->
+    <div class="w3-row-padding">
+      <!-- Card 1 -->
+      <div class="w3-col s1 m6 w3-margin-bottom">
+        <div style="background-color: #F2E6F5;">
+          <video controls style="width:100%">
+            <source src="purple/lowcontrast.mp4" type="video/mp4">
+            Your browser does not support the video file type.
+          </video>
+          <div class="w3-container">
+            <h2>Low Contrast in Film</h2>
+            <h3>(High-Key Lighting)</h3>
+            <p class="w3-opacity">Barbie (2023)</p>
+            <p>Low contrast occurs when there is only a small difference between the lightest and darkest parts of an image, creating a soft and evenly lit look. In Barbie, high-key lighting minimizes shadows and keeps nearly every part of the frame visible. Even though the colors are bright and saturated, the lighting remains smooth and balanced, giving the film its artificial, dreamlike, and idealized aesthetic.</p>
+            <a href="https://www.imdb.com/title/tt1517268/" target="_blank" class="w3-btn w3-light-grey w3-hover-white w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="w3-col s1 m6 w3-margin-bottom">
+        <div style="background-color: #1a1a1a; color: white;">
+          <video controls style="width:100%">
+            <source src="purple/highcontrast.mp4" type="video/mp4">
+            Your browser does not support the video file type.
+          </video>
+          <div class="w3-container">
+            <h2>High Contrast in Film</h2>
+            <h3>(Low-Key Lighting)</h3>
+            <p class="w3-opacity">Oppenheimer (2023)</p>
+            <p>High contrast is created when there is a strong difference between bright highlights and deep shadows. Oppenheimer uses low-key lighting and stark black-and-white imagery to emphasize this effect. The sharp contrast enhances tension, isolates subjects, and reinforces the film’s serious and psychological tone, making scenes feel more intense and dramatic.</p>
+            <a href="https://www.imdb.com/title/tt15398776/" target="_blank" class="w3-btn w3-gray w3-hover-white w3-block w3-margin-top"> Watch Movie </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="imgModal" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-yellow w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center">
+        <img id="modalImg" src="#" alt="N/A" style="width:100%">
+      </div>
+    </div>
+
+  <!-- Balanced Color Contrast -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Balanced Color Contrast</b></h1>
+    <hr style="width:50px;border:5px solid purple;" class="w3-round">
+    <p>Balanced color contrast in film refers to the strategic use of colors to create a visually stable, harmonious image while still providing enough separation to guide the viewer’s eye. It often combines two distinct concepts: color balance (neutralizing unwanted color casts) and color contrast (using differences in hue to create depth).</p>
+    <img src="purple/balancedcolors.webp" style="width:100%" alt="Balanced Colors Chart">
+    <p>Let's look at some movie color palette examples and the various ways they are used.</p>
+  </div>
+
+<!-- Example Slideshow -->
+  <div class="w3-content w3-display-container" style="max-width:800px">
+    <!-- Slide 1 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="purple/mono.webp" style="width:100%" alt="The Grand Budapest Hotel (2014)">
+      <div class="w3-container">
+        <h2>Monochromatic</h2>
+        <p> Monochromatic color schemes come in shades of a single color such as red, dark red, and pink. They create a deeply harmonious feeling that is soft, lulling, and soothing. We see this in The Grand Budapest Hotel (2014).  </p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="purple/comp.webp" style="width:100%" alt="Various Action Movies">
+      <div class="w3-container">
+        <h2>Complementary</h2>
+        <p>Complementary colors live opposite each other on the color wheel. For example, orange and blue are complementary colors commonly used in many blockbuster films. The dueling colors are often associated with conflict, whether internal or external. No matter the color selection, complementary colors combine warm and cool colors to produce a high-contrast, vibrant tension in the film.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="purple/anal.webp" style="width:100%" alt="Children of Men (2006)">
+      <div class="w3-container">
+        <h2>Analogous</h2>
+        <p>Analogous colors neighbor each other on the color wheel (e.g., red/violet or yellow/lime green). Since the colors don’t have the contrast and tension of the complementary colors, they create an overall harmonious and soothing viewing experience. Analogous colors are easy to take advantage of in landscapes and exteriors as they are often found in nature. One color can be chosen to dominate, a second to support, and a third (along with blacks, whites, and grey tones) to accent.</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="mySlides2 w3-card-4 w3-light-grey">
+      <img src="purple/tria.webp" style="width:100%" alt="Superman (1978)">
+      <div class="w3-container">
+        <h2>Triadic</h2>
+        <p>Early Technicolor films often used green in a relatively straightforward way, emphasizing its association with nature and the outdoors. The Adventures of Robin Hood (1938), for example, features lush green forests that serve as both a setting and a symbol of Robin Hood’s connection to the natural world and his fight for freedom.</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+  </div>
+  <!-- Pagination -->
+  <div class="w3-center">
+    <div class="w3-bar">
+      <a href="green.html" class="w3-bar-item w3-button">&laquo;</a>
+      <a href="index.html" class="w3-button">1</a>
+      <a href="red.html" class="w3-button">2</a>
+      <a href="yellow.html" class="w3-button">3</a>
+      <a href="green.html" class="w3-button">4</a>
+      <a href="contrast.html" class="w3-button w3-pink">5</a>
+      <a href="contrast.html" class="w3-button">&raquo;</a>
+    </div>
+  </div>
+
+</div>
+<!-- End page content -->
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex2-1].style.display = "block";  
+}
+
+function expandImage(img) {
+  document.getElementById("modalImg").src = img.src;
+  document.getElementById("imgModal").style.display = "block";
+}
+</script>
+
+</body>
+</html>
